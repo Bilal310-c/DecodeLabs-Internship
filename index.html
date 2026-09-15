@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Frontend Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Webcraft</div>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#hero" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <button class="btn theme-btn" id="themeBtn">Dark Mode</button>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        
+    <div class="hero-box">
+        <h1>The Future of Digital Craft</h1>
+        <p>Building responsive web apps with simple HTML, CSS, and vanilla JS.</p>
+        <a href="#projects" class="btn main-btn">Get Started</a>
+    </div>
+    </section>
+
+    <div class="main-layout" id="projects">
+        
+        <aside class="sidebar">
+            <h3>Filter Topics</h3>
+            <ul class="filter-list">
+                <li><button class="filter-btn active" data-category="all">All</button></li>
+                <li><button class="filter-btn" data-category="html">HTML5</button></li>
+                <li><button class="filter-btn" data-category="css">CSS3</button></li>
+                <li><button class="filter-btn" data-category="js">JavaScript</button></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>Core Features</h2>
+            <p class="subtitle">Responsive layout built using CSS Grid and Flexbox.</p>
+
+            <div class="cards" id="cardsBox">
+                
+                <article class="card" data-category="html">
+                    <div class="badge">01</div>
+                    <h3>Semantic HTML</h3>
+                    <p>Uses proper elements like header, nav, main, article, and footer for accessibility.</p>
+                    <button class="card-btn">Learn More</button>
+                </article>
+
+                <article class="card" data-category="css">
+                    <div class="badge">02</div>
+                    <h3>Responsive Styling</h3>
+                    <p>Uses a simple color system and reusable CSS variables to keep the interface consistent</p>
+                    <button class="card-btn">Learn More</button>
+                </article>
+
+                <article class="card" data-category="css">
+                    <div class="badge">03</div>
+                    <h3>Grid & Flexbox</h3>
+                    <p>CSS Grid for macro layout and Flexbox for menu items and card components.</p>
+                    <button class="card-btn">Learn More</button>
+                </article>
+
+                <article class="card" data-category="js">
+                    <div class="badge">04</div>
+                    <h3>Vanilla JS</h3>
+                    <p>Basic state management like mobile drawer, theme toggle, and card filtering.</p>
+                    <button class="card-btn">Learn More</button>
+                </article>
+
+            </div>
+        </main>
+
+    </div>
+
+    <section class="about-section" id="about">
+        <h2>About Interface</h2>
+        <p>This project helped me practice responsive design, semantic HTML, CSS Grid, Flexbox, and basic JavaScript interactions</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 MyWebCraft. Built as part of my DecodeLabs internship.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
